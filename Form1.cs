@@ -91,10 +91,7 @@ namespace adHoc
                     var graph = new Graph(verticesCurrent);
                     for (int i = 0; i < iterations; i++)
                     {
-                        float r = graph.AverageDegree(generator.Generate(
-                            Convert.ToDouble(textBoxRadiusMin.Text),
-                            Convert.ToDouble(textBoxRadiusMax.Text),
-                            radioButton3D.Checked));
+                        float r = graph.AverageDegree(generator.Generate());
                         if (r != 0)
                         {
                             sum += r;

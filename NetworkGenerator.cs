@@ -11,35 +11,18 @@ namespace adHoc
         private static Random random = new Random();
         private Vertex[] vertices;
         private double RadiusMax;
-        public Vertex CreateObst(double radius, bool is3D)
+        public Vertex CreateObst()
         {
             var r = random.NextDouble() * 2.0;
             var phi = random.NextDouble() * 2.0 * Math.PI;
-            if (is3D)
-            {
-                var theta = random.NextDouble() * 2.0 * Math.PI;
-                return new Vertex3D(r * Math.Sin(phi) * Math.Cos(theta), r * Math.Sin(phi) * Math.Sin(theta), r * Math.Cos(theta), radius);
-            }
-            else
-            {
-                return new Vertex2D(r * Math.Cos(phi), r * Math.Sin(phi), radius);
-            }
+            
+            
+                return new Vertex2D(r * Math.Cos(phi), r * Math.Sin(phi), 2);
+            
         }
-        public Vertex CreateVertex(double radius, Vertex obst, bool is3D)
+        public Vertex CreateVertex(double radius, Vertex obst)
         {
-                if (is3D)
-                {
-                    while (true)
-                    {
-                        var r = random.NextDouble() * RadiusMax;
-                        var phi = random.NextDouble() * 2.0 * Math.PI;
-                        var theta = random.NextDouble() * 2.0 * Math.PI;
-                        Vertex3D created = new Vertex3D(r * Math.Sin(phi) * Math.Cos(theta), r * Math.Sin(phi) * Math.Sin(theta), r * Math.Cos(theta), radius);
-                        if (created.NotLiesIn(obst)) return created;
-                    }
-                }
-                else
-                {
+           
                     while (true)
                     {
                         var r = random.NextDouble() * RadiusMax;
@@ -47,7 +30,7 @@ namespace adHoc
                         Vertex2D created = new Vertex2D(r * Math.Cos(phi), r * Math.Sin(phi), radius);
                         if (created.NotLiesIn(obst)) return created;
                     }
-                }
+                
             }
 
         public NetworkGenerator(double radiusMax, int count)
@@ -56,14 +39,16 @@ namespace adHoc
             vertices = new Vertex[count];
         }
 
-        public int[][] Generate(double radiusMin, double radiusMax, bool is3D)
+        public int[][] Generate()
         {
+            double radiusMin = 1;
+            double radiusMax = 1;
             int count = vertices.Count();
-            Vertex obst = CreateObst(2.0, is3D);
+            Vertex obst = CreateObst();
             for (int i = 0; i < count; i++)
             {
-                double radius = random.NextDouble() * (radiusMax - radiusMin) + radiusMin;
-                vertices[i] = CreateVertex(radius, obst, is3D);
+                double radius = 1; // random.NextDouble() * (radiusMax - radiusMin) + radiusMin;
+                vertices[i] = CreateVertex(radius, obst);
             }
             var result = new int[count][];
             for (int i = 0; i < count; i++)

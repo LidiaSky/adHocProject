@@ -23,3 +23,12 @@ C:\Users\user\Desktop\adhoc\adHoc\obj\Debug\adHoc.csprojResolveAssemblyReference
 C:\Users\user\Desktop\adhoc\adHoc\obj\Debug\adHoc.Form1.resources
 C:\Users\user\Desktop\adhoc\adHoc\obj\Debug\adHoc.Properties.Resources.resources
 C:\Users\user\Desktop\adhoc\adHoc\obj\Debug\adHoc.csproj.GenerateResource.Cache
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\bin\Debug\adHoc.exe.config
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\obj\Debug\adHoc.exe
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\obj\Debug\adHoc.pdb
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\obj\Debug\adHoc.csprojResolveAssemblyReference.cache
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\obj\Debug\adHoc.Form1.resources
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\obj\Debug\adHoc.Properties.Resources.resources
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\obj\Debug\adHoc.csproj.GenerateResource.Cache
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\bin\Debug\adHoc.exe
+C:\Users\Lidia Zakharova\Documents\Учеба\Магистратура\2 КУРС\adhoc\adHoc-full\bin\Debug\adHoc.pdb
